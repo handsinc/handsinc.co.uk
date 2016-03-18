@@ -1,0 +1,76 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="/plugins/content/accordionfaq/css/accordionfaq.css" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/accordionfaq/css/bluefaq.css" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/rokbox/themes/light/rokbox-style.css" type="text/css" />
+  <style type="text/css">
+    <!--
+span.tooltips-link { border-bottom: 1px dashed #CCCCCC; }
+div.tooltips-tip, div.tooltips-tip.tool-tip, div.tooltips-tip-tip { z-index: 200 }
+div.tooltips-tip div.tip, div.tooltips-tip-tip > div { background-color: #F6F6FF; border-color: #CCCCCC; border-width: 2px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; max-width: 400px; }
+    -->
+  </style>
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/plugins/content/accordionfaq/js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="/plugins/content/accordionfaq/js/preparefaq.js"></script>
+  <script type="text/javascript" src="/plugins/system/tooltips/js/script.js"></script>
+  <script type="text/javascript" src="/plugins/system/javascript/polaroid.js"></script>
+  <script type="text/javascript" src="/plugins/system/rokbox/rokbox.js"></script>
+  <script type="text/javascript" src="/plugins/system/rokbox/themes/light/rokbox-config.js"></script>
+  <script type="text/javascript">
+// <!--
+if (typeof (preparefaq) === 'undefined') var preparefaq = new prepareFaq();
+preparefaq.onFunctionAvailable( 'jQuery', 300, function() {
+	preparefaq.setjQuery();
+	preparefaq.loadScript( '/plugins/content/accordionfaq/js/jquery.accordion.js' );
+	preparefaq.loadScript( '/plugins/content/accordionfaq/js/jquery.easing.js' );
+	preparefaq.loadScript( '/plugins/content/accordionfaq/js/jquery.dimensions.js' );
+	jQuery.noConflict();
+	jQuery(document).ready(function(){
+		preparefaq.exec( { id: 'accordion3', header: 'h3', autonumber: false, print: false } );
+		preparefaq.onFunctionAvailable( 'preparefaq.getjQuery().fn.accordion', 300, function() {
+			preparefaq.getjQuery()('#accordion3').accordion( {
+				  header: 'h3'
+				, autoheight: false
+				, alwaysOpen: true
+				, active: '#item1'
+			 	, animated: 'slide'
+			 	, event: 'click'
+			});
+		});
+	});
+});
+// -->
+
+ var tooltips_fade_in_speed = 0; var tooltips_fade_out_speed = 200; var tooltips_max_width = 400;
+		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-tip', fixed: false, onShow: function(tip){ tooltips_show( tip ); }, onHide: function(tip){ tooltips_hide( tip ); }}); });
+		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link-img'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-img tooltips-tip', fixed: false, onShow: function(tip){ tooltips_show( tip ); }, onHide: function(tip){ tooltips_hide( tip ); }}); });
+var rokboxPath = '/plugins/system/rokbox/';
+  </script>
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/ahgallery.css" type="text/css" />
+
+<meta name="verify-v1" content="" />
+<meta name="y_key" content="" />
+
+<link rel="stylesheet" href="/templates/minimlovr/css/template.css" type="text/css" />
+<link rel="stylesheet" href="/templates/minimlovr/css/light.css" type="text/css" />
+<link rel="stylesheet" href="/templates/minimlovr/css/joomla.css" type="text/css" />
+<link rel="stylesheet" href="/templates/minimlovr/css/moomenuv.css" type="text/css" />
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="/templates/minimlovr/css/joomla-ie6.css" type="text/css" />
+<![endif]-->
+<!-- MOOMENU VERTICAL-->
+<!--
+<script type="text/javascript" src="/templates/minimlovr/js/moomenuv.js"></script>
+-->
+<!-- FIN MOOMENU VERTICAL-->
+</head>

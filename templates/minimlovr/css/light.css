@@ -1,0 +1,177 @@
+body{ background-color:none; color:#111546; }
+hr{ border:0; color:#111546; background-color: #e5e5e5; }
+
+/* links */
+a:link{ color:#0098EB; text-decoration:none; }
+a:visited { color:#0098EB; text-decoration:none; }
+a:hover{ color:#111546;  text-decoration:none; }
+a.readmore {
+	color: #fff;
+	padding: 3px 10px;
+	margin-left: 2px;
+	background-color: #111;
+	border: none;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+a.readmore:hover {background-color: #0098EB; color:#fff;}
+
+/* lists, blockquotes and paragraphs */
+p, ul, ol, blockquote{ color:#111546;}
+
+blockquote{
+	color:#111546;
+	background-color:#333;
+}
+blockquote p{ color:#111546; }
+/* code */
+code{ border-left:4px solid #dddddd;}
+
+button, input[type="button"], input[type="submit"] {
+	color: #ffffff;
+	background-color: #0098EB;
+}
+input[type="file"], input.inputbox, textarea {
+	background-color: #fff;
+	color:#333;
+}
+fieldset {border:none; padding:0;}
+legend {border:none;padding:10px 0 10px 2px;}
+/* Content
+------------------------------------------------------*/
+
+#jltopblock{ background-color:none; }
+#jlogo h1 a{color:#0098EB;} #jlogo h1 a:hover{color:#181818;}
+
+/* top menu styling */
+#header {}
+#header ul.menu {margin:20px 0 0 0; padding:0;width:290px;}
+#header .search .inputbox {border-bottom:1px solid #ccc;-moz-border-radius:0;padding:0px 0px 1px;background:#f5f5f5;}
+#header .search .button {background:#0098EB; color:#fff; -moz-border-radius:0;font-weight:normal; font-size:10px;}
+	ul.menu li{ border-bottom:1px dotted #ddd; list-style-type:none;}
+	ul.menu li a:link, ul.menu li a:active, ul.menu li a:visited{ color:#111546;	}
+	ul.menu li a:hover { text-decoration:none; color:#0098EB; }
+	ul.menu li.active a{color:#0098EB;}
+
+
+.arrowlistmenu{
+width: 250px; /*width of menu*/
+}
+
+.arrowlistmenu .headerbar{
+font:  11pt ;
+color: white;
+background: black  repeat-x center left;
+margin-bottom: 6px; /*bottom spacing between header and rest of content*/
+text-transform: lowercase;
+padding: 4px 0 4px 10px; /*header text is indented 10px*/
+}
+.arrowlistmenu ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+}
+
+.arrowlistmenu ul li{
+padding-bottom: 3px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li a{
+color: #00155f;
+display: block;
+padding-top: 2px;
+padding-bottom: 4px;
+padding-left: 0px; /*link text is indented 19px*/
+border-bottom: 1px solid #ddd;
+text-decoration: none;
+
+font-size: 12pt;
+}
+
+.activemenu{
+color: #0082d6;
+background: url(/assets/handbulletovr.png) no-repeat center left; /*custom bullet list image*/
+display: block;
+padding-top: 3px;
+padding-bottom: 4px;
+padding-left: 28px; /*link text is indented 19px*/
+border-bottom: 1px solid #ddd;
+text-decoration: bold;
+
+font-size: 12pt;
+}
+
+
+
+.submenu{
+
+font-size: 9pt;
+color: #0082d6;
+padding-left: 28px; /*link text is indented 19px*/
+padding-top: -2px;
+padding-bottom: 4px;
+
+
+
+
+}
+
+
+.arrowlistmenu ul li a:visited{
+color: #00155f;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color: #0082d6;
+
+}
+
+
+
+
+
+#jltopmodule .moduletable h2 { color:#111;}
+#jltopmodule .moduletable h2 a{color:#0098EB;}
+#jltopmodule .moduletable h2 a:hover {color:#111546;}
+#jltopmodule .moduletable h3, #jlsidebar .moduletable h3 { font-family: Verdana,'Lucida Grande','Lucida Sans Unicode',sans-serif; color:#0098EB; border-top:0px solid #222; font-size:18px;}
+#jltopmodule .moduletable a{ color:#0098EB; }
+#jltopmodule .moduletable a:hover { color:#111546; }
+/* for art Gallery module at this position, need to defined like these below if you move the position */
+#jltopmodule #artGallery h3 {border-top:none;}
+#jltopmodule #artGallery h3 a {background-color:#0098EB; color:#fff; padding:0 0px;}
+#jltopmodule #artGallery h3 a:hover {background-color:#111; color:#0098EB;}
+
+#jlcontent div.joomla tr th {background:#111; color: #fff;}
+	#jlcontent div.joomla tr th a {color:#0098EB;}
+	#jlcontent div.joomla tr th a:hover {color:#fff;}
+	#jlcontent div.joomla tr.odd td {
+		background:#f5f5f5;
+		border-bottom:1px solid #e5e5e5;
+	}
+	#jlcontent div.joomla tr.even td {
+		background:#fff;
+		border-bottom:1px solid #e5e5e5;
+	}
+
+#jlsidebar{}
+#jlsidebar .moduletable {color:#111546;}
+#jlsidebar .moduletable_menu ul.menu li a {font-size:11px; color:#0098EB;}
+
+
+
+#jlfooter {}
+#jlfooter ul.menu li { border-bottom:none; }
+#jlfooter .right {border-bottom:0px solid #111; color:white; text-align: right;}
+#jlfooter a {color:#111546;}
+	.copyleft{ font-size:11px; color: white;}
+
+
+	/* override for Vote plugin */
+	.votitaly-box  {color:#111;}
+	/* override for intense debate comment div*/
+	#idc-container div,
+	#idc-container .idc-thread_active {color:#111;}
+	/*override rokdownload.css */
+	.rd_button {color:#111;}

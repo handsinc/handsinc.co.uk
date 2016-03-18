@@ -1,0 +1,30 @@
+---
+layout: default
+title: Contact Us
+joomla_id: 59
+joomla_url: contact-us
+date: 2011-09-29 14:48:00.000000000 +01:00
+---
+<h3><img src="{{ site.baseurl }}/images/stories/lowcostclinicpic.jpg" border="0" /></h3>
+<p><img src="{{ site.baseurl }}/images/stories/lowcostheading.png" border="0" width="325" height="52" style="margin-left: -10px; margin-top: 0px; margin-bottom: 0px; border: 0pt none;" /></p>
+<p><strong>Affordable complementary health treatments for the community</strong></p>
+<p>Hands Inc is a not-for-profit community organisation based in Hackney. We operate low-cost massage and acupuncture clinics at the John Scott Medical Centre and The Lower Clapton Health Centre in Hackney. If you are a health professional and want to refer clients please contact us and see our Complementary Therapies fact and stats sheet.<br /><br />Hands Inc provides these clinics with the aim of offering affordable access while empowering individuals to take proactive and sustainable steps towards greater wellbeing and healthier lifestyles. The clinic is run on a self referral basis. Our professionally run clinics are socially inclusive, where health equity is paramount.</p>
+<p>{tip</p>
+<p>• Those over 60<br />• Those on benefits,<br />• Refugee or asylum seekers<br />• Those with mental health issues<br />• Those suffering long term ill health</p>
+<p>We will require proof of eligibility.}<strong>People eligible for treatment</strong>{/tip}</p>
+<p>In order to access the clinic you will need to leave a message on our recorded phone line service and one of our team will get back to you. <strong>0844 774 1244</strong> (standard land line rate). Booking is essential.</p>
+<p><img src="{{ site.baseurl }}/images/stories/clinics.png" border="0" width="108" height="61" style="margin-left: -10px; margin-bottom: -20px;" /></p>
+<table border="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><span style="color: #0098eb;"><strong>John Scott Health Centre</strong></span><br />Woodbury Down, Green Lanes, London, N4 2NU <br /><em>(entrance through Community Service Reception on Springpark Drive)</em><br /><br /><strong>Low-cost acupuncture clinic:</strong><br />Wednesdays: 10am – 2pm<br /> £15-£25 <br /><br /><strong>Low-cost massage clinic:</strong><br />Fridays: 10am – 5pm<br />On Site Acupressure Massage (Neck/shoulder/back) £10-£15 <br />Indian head massage £10-£15<br />Therapeutic body massage £15-£25<br />Aromatherapy £15-£25</p>
+</td>
+<td style="width: 10px;"></td>
+<td valign="top">
+<p><span style="color: #0098eb;"><strong>Lower Clapton Health Centre</strong></span><br />36 Lower Clapton Road, E5 0PD</p>
+<p><strong>Low-cost massage clinic:</strong><br />Wednesdays: 10am – 5pm<br />Therapeutic body massage £15-£25<br />Indian head massage £10-£15</p>
+</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,57 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: 'Hands Inc :: innovative holistic health solutions, complementary therapies, health awareness workshops and training'
+email: handsinc@handsinc.co.uk
+description: > # this means to ignore newlines until "baseurl:"
+  innovative holistic health solutions, complementary therapies, health
+  awareness workshops and training
+baseurl: '' # the subpath of your site, e.g. /blog
+url: http://handsinc.co.uk # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  jekyll
+# collections:
+#   services:
+#     output: true
+#     permalink: /services/:path/
+menus:
+  side:
+    - Home: /
+    - About Us:
+      - /aboutus/
+      - Our Work in the Community: /aboutus/#community
+      - Our Work with Employers &amp; Staff: /aboutus/#employers
+      - What We Believe: /aboutus/#believe
+      - Testimonials: /aboutus/#testimonials
+    - Services:
+      - /services/
+      - Services for Individuals: /services/services-for-individuals/
+      - Complementary Therapies:
+        - /services/complementary-therapies/
+        - Range of Therapies: /services/complementary-therapies/#therapies
+        - Low Cost Clinics: /services/complementary-therapies/low-cost-clinics/
+      - Healthy Lifestyle Activities: /services/healthy-lifestyle-activities/
+      - Move & Relax: /services/move-and-relax/
+      - Stress Awareness: /services/stress-awareness/
+    - Wellbeing @ Work:
+      - /wellbeing-at-work/
+      - Message @ Work: /wellbeing-at-work/message-at-work/
+      - Create Solutions @ Work: /wellbeing-at-work/create-solutions-at-work/
+    - Get Involved: /get-involved/
+    - Gallery: /gallery/
+    - Contact Us: /contact-us/
+
+exclude:
+  - bin/*
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - kickster/
+
+# Build settings
+# markdown: kramdown

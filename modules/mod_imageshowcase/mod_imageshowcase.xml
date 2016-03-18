@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+	<name>Image Showcase</name>
+	<creationDate>2010/02/23</creationDate>
+	<author>Kaysten Mazerino</author>
+	<authorEmail>extensions@cmstactics.com</authorEmail>
+	<authorUrl>http://www.cmstactics.com | http://www.cmsmarket.com/community/profile?userid=1001</authorUrl>
+	<copyright>CMS Tactics</copyright>
+	<license>GPL | CMS Tactics</license>	
+	<version>2.0</version>
+	<description>A module that displays a slideshow of images from a path (directory).</description>
+	<files>
+		<filename>index.html</filename>
+		<filename module="mod_imageshowcase">mod_imageshowcase.php</filename>
+		<filename>mootools-release-1.11.js</filename>
+		<filename>mod_imageshowcase.css</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>testimages/index.html</filename>
+		<filename>testimages/CMS-Tactics-Inc-logo.gif</filename>
+		<filename>testimages/beeheard-logo.png</filename>
+		<filename>testimages/cookiescrumbslogo3.png</filename>
+		<filename>testimages/moo_menu_logo.jpg</filename>
+		<filename>testimages/full_accesslevel-mid.jpg</filename>
+		<filename>testimages/playlistgen_dropdown.jpg</filename>
+		<filename>testimages/beeheardlite-logo.png</filename>
+		<filename>assets/cmsmarketconnect/cmsmarketconnect.php</filename>
+		<filename>assets/cmsmarketconnect/cmsmconnect_logo.png</filename>
+		<filename>assets/cmsmarketconnect/index.html</filename>
+		<filename>assets/cmsmarketconnect/template.php</filename>
+	</files>
+	<params addpath="/modules/mod_imageshowcase/assets/cmsmarketconnect">
+		<param name="include_js" type="radio" default="1" label="Include Javascript" description="Set this to 'No' if your template will already be including the mootools javascript.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module, this allows individual module styling" />
+		<param name="images_path" type="text" default="modules/mod_imageshowcase/testimages/" label="Images Path" description="A relative path to the location of images to show." />
+		<param name="transition_time" type="text" default="1500" label="Trasition Time" description="The time it takes to fade from one image to the next in milliseconds." />
+		<param name="delay_time" type="text" default="5000" label="Delay Time" description="The time delay between picture fades in milliseconds." />
+		<param name="web_links_catid" type="text" default="" label="Web Links Category ID" description="If this value is populated, the links in the Web Links Category specified will be used in anchor tags for the images displayed in the module." />
+		<param name="default_link" type="text" default="" label="Default Link" description="If this value is populated, this link will be used for any image that does not have an associated Web Link." />
+		<param name="container_width" type="text" default="" label="Container Width" description="The height for the container div." />
+		<param name="container_height" type="text" default="" label="Container Height" description="The height for the container div." />
+		<param name="start_image" type="list" default="first" label="Start Image" description="This determines which image to show the user first.  First will always show the first image, random will randomly pick an image, and last seen will store a cookie on the user's browser and always start at the last one they were shown.">
+			<option value="first">First</option>
+			<option value="random">Random</option>
+			<option value="last_seen">Last Seen</option>
+		</param>
+		<param name="image_order" type="list" default="forward" label="Image Order" description="This determines the order in which to show images.  Forward will show them forward in the order they are found on the server, Backward shows them in the reverse of that order, and Random will randomly pick the next image to show.">
+			<option value="forward">Forward</option>
+			<option value="backward">Backward</option>
+			<option value="random">Random</option>
+		</param>
+		<param name="ping_pong" type="radio" default="0" label="Ping Pong" description="If this is checked, the show will start with the image order selected above and reverse when it hits the end of the image list.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_scale_mode" type="list" default="fit_width" label="Image Scale Mode" description="This determines how the image height and width are set.">
+			<option value="fit_both">Fit Both</option>
+			<option value="fit_height">Fit Height</option>
+			<option value="fit_width">Fit Width</option>
+			<option value="none">None</option>
+		</param>
+		<param name="image_vertical_align" type="list" default="center" label="Image Vertical Align" description="This determines how the image is aligned vertically.">
+			<option value="top">Top</option>
+			<option value="center">Center</option>
+			<option value="bottom">Bottom</option>
+		</param>
+		<param name="image_horizontal_align" type="list" default="center" label="Image Horizontal Align" description="This determines how the image is aligned horizontally.">
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="delay_image_loading" type="radio" default="0" label="Delay Image Loading" description="Set this to 'Yes' if you want to wait until domready to set your image sources.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="play_count" type="text" default="0" label="Play Count" description="This is the number of times to play through the image list.  If this is set to 0, it will repeat forever." />
+		<param name="mod_imageshowcase" label="Version Information" description="Up to date version, support, and review information from CMS Market." type="cmsmarketconnect" />
+	</params>
+</install>

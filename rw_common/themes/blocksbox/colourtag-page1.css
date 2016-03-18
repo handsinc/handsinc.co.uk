@@ -1,0 +1,31 @@
+body {
+	color: #111546;
+	background-color: #FDFDFD;
+}
+
+a:link, a:visited, a:active {
+	color: #00034D;
+	background: #000000;
+}
+
+a:hover {
+	color: #111547;
+	background: #000000;
+}
+
+.form-input-field {
+	background: #F4F4F4;
+	color: #000000;
+}
+
+.thumbnail-frame img {
+	background-color: #000000;
+}
+
+.photo-frame {
+	border: 5px solid #000000;
+}
+
+h1.blog-entry-title, h1.blog-entry-title a{
+	color: #000000;
+}

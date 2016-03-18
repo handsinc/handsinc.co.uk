@@ -1,0 +1,122 @@
+{% if page.slides %}
+<div class="moduletable">
+  <link href="{{ site.baseurl }}/modules/mod_imageshowcase/mod_imageshowcase.css" rel="stylesheet" type="text/css" />
+  <div style="height: 340px;width: 602px;" class="mod_imageshowcase_container" id="mod_imageshowcase_containerTagId_51">
+    {% for slide in page.slides %}
+    <div style="opacity: 0; filter: alpha(opacity = 0)" class="mod_imageshowcase_div mod_imageshowcase_div_51">
+      <img id="mod_imageshowcase_imageIdPrefix_510" class="mod_imageshowcase_image" src="{{ site.baseurl }}/images/{{ slide }}" title="" />
+      <br />
+    </div>
+    {% endfor %}
+    {% comment %}
+    <div style="opacity: 0; filter: alpha(opacity = 0)" id="mod_imageshowcase_divIdPrefix_510" class="mod_imageshowcase_div mod_imageshowcase_div_51">
+      <img id="mod_imageshowcase_imageIdPrefix_510" class="mod_imageshowcase_image" src="{{ site.baseurl }}/images/aboutslides/aboutuspic1.jpg" title="" />
+      <br />
+    </div>
+    <div style="opacity: 0; filter: alpha(opacity = 0)" id="mod_imageshowcase_divIdPrefix_511" class="mod_imageshowcase_div mod_imageshowcase_div_51">
+      <img id="mod_imageshowcase_imageIdPrefix_511" class="mod_imageshowcase_image" src="{{ site.baseurl }}/images/aboutslides/aboutuspic2.jpg" title="" />
+      <br />
+    </div>
+    <div style="opacity: 0; filter: alpha(opacity = 0)" id="mod_imageshowcase_divIdPrefix_512" class="mod_imageshowcase_div mod_imageshowcase_div_51">
+      <img id="mod_imageshowcase_imageIdPrefix_512" class="mod_imageshowcase_image" src="{{ site.baseurl }}/images/aboutslides/aboutuspic3.jpg" title="" />
+      <br />
+    </div>
+    {% endcomment %}
+  </div>
+  <script language="javascript" type="text/javascript" src="{{ site.baseurl }}/modules/mod_imageshowcase/mootools-release-1.11.js"></script>
+  <script language="javascript" type="text/javascript">
+  var praiseShowStartImage_51 = 'first';
+  var praiseShowImageOrder_51 = 'forward';
+  var praiseShowPingPong_51 = 0;
+  var praiseShowImageCount_51 = 3;
+  var praiseShowFxs_51 = new Array();
+  var praiseShowCurrentImageIndex_51;
+  var praiseShowPlayCount_51 = 0;
+  var praiseShowCurrentPlayCount_51 = 0;
+  if(praiseShowStartImage_51 == 'random')
+  {
+    praiseShowCurrentImageIndex_51 = Math.floor(Math.random()*praiseShowImageCount_51);
+  }
+  else if(praiseShowStartImage_51 == 'last_seen')
+  {
+    praiseShowCurrentImageIndex_51 = Cookie.get('praiseShowLastIndex_51');
+    if(!praiseShowCurrentImageIndex_51) { praiseShowCurrentImageIndex_51 = 0; }
+  }
+  else if(praiseShowImageOrder_51 == 'backward')
+  {
+    praiseShowCurrentImageIndex_51 = praiseShowImageCount_51 - 1;
+  }
+  else
+  {
+    praiseShowCurrentImageIndex_51 = 0;
+  }
+  window.addEvent('domready',function() {
+  });
+  window.addEvent('load',function() {
+    var coords = $('mod_imageshowcase_containerTagId_51').getCoordinates();
+    var elImage;
+    var elImageCoords;
+    $$('.mod_imageshowcase_div_51').each(function(el, i)
+    {
+      elImage = el.getElement('.mod_imageshowcase_image');
+      elImage.setStyle('width', coords.width + 'px');
+      elImageCoords = elImage.getCoordinates();
+      elImage.setStyle('left', (coords.width/2 - elImageCoords.width/2) + 'px');
+      elImage.setStyle('top', (coords.height/2 - elImageCoords.height/2) + 'px');
+      if(i == praiseShowCurrentImageIndex_51) { el.setStyle('opacity', 1); }
+      else { el.setStyle('opacity', 0); }
+      praiseShowFxs_51[i] = new Fx.Style(el, 'opacity', {
+        wait: false,
+        duration: 1500,
+        transition: Fx.Transitions.Quart.easeInOut
+      });
+    });
+    switchImage_51.periodical(6500);
+  });
+  var switchImage_51 = function()
+  {
+    var nextImageIndex = praiseShowCurrentImageIndex_51;
+    switch(praiseShowImageOrder_51)
+    {
+      case 'random':
+      while(nextImageIndex == praiseShowCurrentImageIndex_51 && praiseShowImageCount_51 > 0)
+      {
+        nextImageIndex = Math.floor(Math.random()*praiseShowImageCount_51);
+      }
+      break;
+      case 'backward':
+      nextImageIndex = praiseShowCurrentImageIndex_51 - 1;
+      if(nextImageIndex < 0) {
+        if(praiseShowPingPong_51) {
+          praiseShowImageOrder_51 = 'forward';
+          nextImageIndex = 1;
+          praiseShowCurrentPlayCount_51++;
+        } else {
+          nextImageIndex = praiseShowImageCount_51 - 1;
+        }
+      }
+      break;
+      default:
+      nextImageIndex = praiseShowCurrentImageIndex_51 + 1;
+      if(nextImageIndex >= praiseShowImageCount_51) {
+        if(praiseShowPingPong_51) {
+          praiseShowImageOrder_51 = 'backward';
+          nextImageIndex = praiseShowImageCount_51 - 2;
+          praiseShowCurrentPlayCount_51++;
+        } else {
+          nextImageIndex = 0;
+        }
+      }
+      break;
+    }
+    praiseShowCurrentPlayCount_51++;
+    if(praiseShowPlayCount_51 == 0 || praiseShowCurrentPlayCount_51 < praiseShowPlayCount_51*praiseShowImageCount_51) {
+      praiseShowFxs_51[praiseShowCurrentImageIndex_51].start(1, 0);
+      praiseShowFxs_51[nextImageIndex].start(0, 1);
+      praiseShowCurrentImageIndex_51 = nextImageIndex;
+      Cookie.set('praiseShowLastIndex_51', praiseShowCurrentImageIndex_51);
+    }
+  }
+  </script>
+</div>
+{% endif %}

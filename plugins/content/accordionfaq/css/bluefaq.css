@@ -1,0 +1,82 @@
+/* bluefaq faq layout */
+.bluefaq.round3 .accordionfaqheader.selected,
+.bluefaq.round3.selected .accordionfaqitem
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.bluefaq.round5 .accordionfaqheader.selected,
+.bluefaq.round5.selected .accordionfaqitem
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.bluefaq.round7 .accordionfaqheader.selected,
+.bluefaq.round7.selected .accordionfaqitem
+{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	border-radius: 7px;
+}
+.bluefaq.round9 .accordionfaqheader.selected,
+.bluefaq.round9.selected .accordionfaqitem
+{
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	border-radius: 9px;
+}
+.bluefaq.contentbackground div.accordionfaqitem
+{
+	background-color: transparent;	/* aliceblue */
+}
+.bluefaq.contentborder div.accordionfaqitem
+{
+	border: 1px solid navy;
+}
+.bluefaq.headerbackground .accordionfaqheader
+{
+	background-color: #0098EB;	/* lightsteelblue */
+}
+.bluefaq.headerborder .accordionfaqheader
+{
+	border:1px solid navy;
+}
+.bluefaq .accordionfaqheader:hover,
+.bluefaq .accordionfaqheader.selected
+{
+	color: white !important;
+	background-color: #0098EB !important;
+}
+.bluefaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/04.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 16px;
+	height: 16px;
+}
+.bluefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/02.png);
+	background-position: 50% 50%;
+}
+.bluefaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white.gif);
+}
+.bluefaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white-l.gif);
+}
+.bluefaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.bluefaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-white.gif);
+}

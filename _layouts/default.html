@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  <div class="wrapper">
+    <div id="container">
+      <div id="jltopblock">
+        <div id="jlogo"><div class="bg"><img src="{{ site.baseurl }}/images/logo.png" width="290" height="204" alt="hands inc"  /></div></div>
+      </div>
+
+      <div id="jlmaincol">
+        <div id="jltopmodule">
+          <div class="clr"></div>
+          {% include slides.html %}
+        </div>
+        <div id="jlcontent">
+          <div class="joomla ">
+            <div class="article">
+              {{ content }}
+              <a href="#top" class="backtotop" style="position: fixed; bottom:0px; right:0px;"><img src="/plugins/content/top.png" alt="scroll back to top" border="0" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include sidebar.html %}
+
+      <div class="clr"></div>
+
+      <div id="jlfooter">
+
+        <div class="left">&nbsp;</div>
+        <div class="right">
+          <div class="clr"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="push"></div> </div>
+  </div>
+  <div class="footer">
+    <div id="jlfooter">
+      <br /><br /><br /><br /><br /><br />
+      © All rights reserved 2016 Hands Inc / 020 3051 8626 /
+      <a href="mailto:handsinc@handsinc.co.uk">handsinc@handsinc.co.uk</a> / Charity Number 1147291
+    </div>
+  </div>
+  <!-- Start of StatCounter Code for Joomla -->
+  <script type="text/javascript">
+  var sc_project=7630120;
+  var sc_invisible=1;
+  var sc_security="6c88c3d1";
+  </script>
+  <script type="text/javascript"
+  src="http://www.statcounter.com/counter/counter.js"></script>
+  <noscript><div class="statcounter"><a title="joomla site
+    stats" href="http://statcounter.com/joomla/"
+    target="_blank"><img class="statcounter"
+    src="http://c.statcounter.com/7630120/0/6c88c3d1/1/"
+    alt="joomla site stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Joomla -->
+
+</body>
+
+</html>
