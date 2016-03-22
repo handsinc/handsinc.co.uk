@@ -121,7 +121,7 @@ a:link{ color:#111546; text-decoration:underline; }
 a:visited { color:#111546; text-decoration:underline; }
 a:hover{ text-decoration:none; }
 a img{ border:none}
-img, img.left { margin: 6px 8px 10px 0; border:none;}
+img.left { margin: 6px 8px 10px 0; border:none;}
 img.right {float:right; margin: 0 0 10px 15px; border:none;}
 
 

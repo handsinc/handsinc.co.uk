@@ -50,8 +50,8 @@ preparefaq.onFunctionAvailable( 'jQuery', 300, function() {
 // -->
 
  var tooltips_fade_in_speed = 0; var tooltips_fade_out_speed = 200; var tooltips_max_width = 400;
-		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-tip', fixed: false, onShow: function(tip){ tooltips_show( tip ); }, onHide: function(tip){ tooltips_hide( tip ); }}); });
-		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link-img'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-img tooltips-tip', fixed: false, onShow: function(tip){ tooltips_show( tip ); }, onHide: function(tip){ tooltips_hide( tip ); }}); });
+window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-tip', fixed: false, onShow: function(tip){ tooltips_show( tip ); }, onHide: function(tip){ tooltips_hide( tip ); }}); });
+window.addEvent('domready', function(){ var JTooltips = new Tips($$('.tooltips-link-img'), { maxTitleChars: 50, showDelay: 100, hideDelay: 100, className: 'tooltips-img tooltips-tip', fixed: false, onShow: function(tip){ tooltips_show( tip ); }, onHide: function(tip){ tooltips_hide( tip ); }}); });
 var rokboxPath = '/plugins/system/rokbox/';
   </script>
 

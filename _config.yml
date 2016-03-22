@@ -35,13 +35,52 @@ menus:
         - /services/complementary-therapies/
         - Range of Therapies: /services/complementary-therapies/#therapies
         - Low Cost Clinics: /services/complementary-therapies/low-cost-clinics/
+      - Reclaim the Menopause: http://www.reclaimthemenopause.com/
       - Healthy Lifestyle Activities: /services/healthy-lifestyle-activities/
       - Move & Relax: /services/move-and-relax/
       - Stress Awareness: /services/stress-awareness/
     - Wellbeing @ Work:
       - /wellbeing-at-work/
       - Message @ Work: /wellbeing-at-work/message-at-work/
-      - Create Solutions @ Work: /wellbeing-at-work/create-solutions-at-work/
+    - Healthwise Directory:
+      - /healthwise-directory/
+      - About Hands Inc: /healthwise-directory/about-handsinc/
+      - Hands Inc Services:
+        - /healthwise-directory/handsinc-services/
+        - Low Cost Massage Clinic: /healthwise-directory/handsinc-services/#clinic
+        - Healthwise Outreach Programme: /healthwise-directory/handsinc-services/#healthwise
+        - Stress Awareness Programmes: /healthwise-directory/handsinc-services/#stress
+        - Outreach Complementary Therapy: /healthwise-directory/handsinc-services/#outreach
+      - Physical Wellbeing:
+        - /healthwise-directory/physical-wellbeing/
+        - French: /healthwise-directory/physical-wellbeing/french/
+        - Turkish: /healthwise-directory/physical-wellbeing/turkish/
+        - Vietnamese: /healthwise-directory/physical-wellbeing/vietnamese/
+      - Social Wellbeing:
+        - /healthwise-directory/social-wellbeing/
+        - French: /healthwise-directory/social-wellbeing/french/
+        - Turkish: /healthwise-directory/social-wellbeing/turkish/
+        - Vietnamese: /healthwise-directory/social-wellbeing/vietnamese/
+      - Mental & Emotional Wellbeing:
+        - /healthwise-directory/mental-and-emotional-wellbeing/
+        - French: /healthwise-directory/mental-and-emotional-wellbeing/french/
+        - Turkish: /healthwise-directory/mental-and-emotional-wellbeing/turkish/
+        - Vietnamese: /healthwise-directory/mental-and-emotional-wellbeing/vietnamese/
+      - Culturally Specific Services:
+        - /healthwise-directory/culturally-specific-services/
+        - French: /healthwise-directory/culturally-specific-services/french/
+        - Turkish: /healthwise-directory/culturally-specific-services/turkish/
+        - Vietnamese: /healthwise-directory/culturally-specific-services/vietnamese/
+      - Advice & Support:
+        - /healthwise-directory/advice-and-support/
+        - French: /healthwise-directory/advice-and-support/french/
+        - Turkish: /healthwise-directory/advice-and-support/turkish/
+        - Vietnamese: /healthwise-directory/advice-and-support/vietnamese/
+      - Employment:
+        - /healthwise-directory/employment/
+        - French: /healthwise-directory/employment/french/
+        - Turkish: /healthwise-directory/employment/turkish/
+        - Vietnamese: /healthwise-directory/employment/vietnamese/
     - Get Involved: /get-involved/
     - Gallery: /gallery/
     - Contact Us: /contact-us/

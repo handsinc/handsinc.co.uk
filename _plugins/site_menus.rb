@@ -108,13 +108,16 @@ module Jekyll
       end
       indent = "  " * level
       active =
-      output = "#{indent}<a href=\"#{value}\""
-      if (selected)
-        output += " class=\"active\""
-      end
+      classes = []
+      classes << 'active' if selected
+      external_link = value.start_with?('http://')
+      # classes << 'external_menu_link' if external_link
+      output = "#{indent}<a href=\"#{value}\" class=\"#{classes.join(' ')}\""
+      output += ' target="_blank"' if external_link
       output += ">"
-      output += "<img src=\"/images/stories/handbullet.png\" align=\"left\" alt=\"#{name}\" />" if level == 1
+      output += "<img class=\"left\" src=\"/images/stories/handbullet.png\" align=\"left\" alt=\"#{name}\" />" if level == 1
       output += "<span>#{name}</span>"
+      output += "<img class=\"external_menu_link\" src=\"/images/external_link_icon.png\" alt=\"external link\" />" if external_link
       output += "</a>\n"
     end
   end
