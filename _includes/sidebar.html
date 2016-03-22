@@ -1,6 +1,14 @@
 <div id="jlsidebar">
   <div class="moduletable">
     {% menu side %}
+    {% if page.url == '/aboutus/' %}
+    <div class="moduletable">
+      <p><span class="tooltips-link isimg" title="::<strong>Tackle health inequalities by improving access to holistic health activities<br /><br /></strong><span style=&quot;color:#0068CF;font-weight:bold; &quot;>Empower individuals, groups and organisations to take proactive and sustainable steps towards a healthy constitution </span><strong><br /><br />Raise awareness and encourage debate about holistic health activities and their intrinsic benefits<br /> <br /></strong><span style=&quot;color:#0068CF;font-weight:bold; &quot;>Forge collaborative partnerships with other professionals and organisations to create innovative, responsive and integrated wellbeing services</span><strong><br />Deliver a quality standard of care by constantly evaluating and  monitoring our services</strong>"><img
+        src="{{ site.baseurl }}/images/stories/keyaimsheading.png" border="0" alt="key aims" title="our key aims" /></span>
+      </p>
+      <p><img src="{{ site.baseurl }}/images/stories/paperchain_1.png" border="0" style="margin-top: -10px;" /></p>
+    </div>
+	  {% endif %}
     {% if page.url == '/contact-us/' %}
     <div class="moduletable">
       <p> </p>
