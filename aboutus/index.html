@@ -4,11 +4,19 @@ title: About Us
 joomla_id: 5
 joomla_url: welcome-to-hands-inc
 date: 2008-08-20 10:11:07.000000000 +01:00
-permalink: /aboutus/
 slides:
   - aboutslides/aboutuspic1.jpg
   - aboutslides/aboutuspic2.jpg
   - aboutslides/aboutuspic3.jpg
+testimonials:
+  - text: Pain was an everyday part of my life. The massage sessions with Hands Inc has reduced the amount of cramp seizures I have. I can now get on and enjoy my life and not be ruled by the pain that used to consume me.
+    person: Clinic Service Users
+  - text: Hands Inc have the incredible ability to pull exceptionally able professionals together delivering an equally exceptionally gainful experience free at the point of delivery.
+    person: Menopause Project Participant
+  - text: The patients only have good things to say about the service and it is accessed from a plethora of age groups and appeals to the group as a whole.  The reports and feedback that we receive from Hands Inc reviewing the services that they provide are invaluable and enable us to see the benefit of the services that are being provided.
+    person: Natasha Lewis<br>Sickle Cell & Thalassaemia, Lead Nurse<br>Homerton University Hospital NHS Foundation Trust
+  - text: Hands Inc programmes make a hugely important contribution to the health and well-being strand of our provision in the borough. The organisation has a strong community focus, designing courses and workshops based on needs analysis and consultation with service users
+    person: Jill Gander<br>Community Development Manager<br>Adult Learning Services, Hackney Learning Trust
 ---
 <p><img src="{{ site.baseurl }}/images/stories/aboutusheading2.png" border="0" alt="about us " title="about us" width="237" height="76" style="margin-top: 0px; border: 0pt none; margin-bottom: -20px;" /><strong><br /></strong></p>
 <p><strong>Hands Inc, is a registered Charity whose mission is to inspire health and wellbeing. We do this through the provision of <a href="{{ site.baseurl }}/services/complementary-therapies/">complementary therapies,</a> <a href="{{ site.baseurl }}/services/healthy-lifestyle-activities/">healthy lifestyle activities</a> and our <a href="/wellbeing-at-work/" title="wellbeing@work">Wellbeing@Work</a> programme. Our team is made up of passionate people who have contributed to the development of an organisation that is innovative in its approach and desire to increase access to holistic health and wellbeing activities.</strong>
@@ -35,23 +43,20 @@ slides:
     of the individuals and communities we work with. Because, we believe that healthy people create a healthy society.</p>
   <h3 id="item4"><a name="testimonials"></a>Testimonials</h3>
   <br />
-  <p><span style="font-family: verdana,geneva;"><span style="font-size: 16px;"><span style="color: #0098eb;"><em>"Hackney CVS commissioned Hands Inc to deliver 4 art therapy focus groups with local residents following the 2011 August riots. Their professional approach and unique style of delivery has helped decision makers in the Borough rethink their understanding of local communities"</em></span></span>
+  {% for testimonial in page.testimonials %}
+  <p>
+    <span style="font-family: verdana,geneva; font-size: 16px; color: #0098eb">
+    <em>"{{ testimonial.text }}"</em>
     </span>
   </p>
-  <p><span style="font-family: tahoma,arial,helvetica,sans-serif;"><span style="color: #333399;"><strong>Jake Ferguson, CEO of Hackney CVS</strong></span></span>
-  </p>
-  <p><span style="font-family: verdana,geneva;"><br /></span></p>
-  <p><span style="font-family: verdana,geneva;"><span style="font-size: 16px;"><span style="color: #0098eb;"><em>"Hands Inc's acupuncture has made a remarkable difference to my life. Acupuncture has meant that I can come off my medication. It is like food to me."</em></span></span>
+  <p>
+    <span style="font-family: tahoma,arial,helvetica,sans-serif; color: #333399">
+    <strong>{{ testimonial.person }}</strong>
     </span>
   </p>
-  <p><span style="color: #333399;"><strong>Female 68 Acupuncture Client</strong></span></p>
-  <p> </p>
-  <p><span style="font-size: 16px"><span style="color: #0098eb;"><em><span style="font-family: georgia,palatino;"><span style="font-family: verdana,geneva;">"Thanks for your sessions, the art therapy and relaxation sessions were both very good in giving our young carers ways of looking after themselves. We will be using your services in the future</span>"</span>
-    </em>
-    </span>
-    </span>
-  </p>
-  <p><span style="color: #333399;"><strong>Caroline Bullen, Action for Children</strong></span></p>
+  <br>
+  {% endfor %}
+
   <h3>end faq</h3>
   <div id="accordion3" class="accordionfaq bluefaq arrow headerbackground contentbackground">
     <p></p>
