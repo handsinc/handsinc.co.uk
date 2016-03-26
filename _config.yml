@@ -91,6 +91,7 @@ exclude:
   - Gemfile.lock
   - vendor/
   - kickster/
+  - CNAME
 
 # Build settings
 # markdown: kramdown
