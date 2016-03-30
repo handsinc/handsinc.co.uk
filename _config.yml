@@ -91,6 +91,7 @@ exclude:
   - Gemfile.lock
   - vendor/
   - kickster/
+  - _images/
 
 # Build settings
 # markdown: kramdown
