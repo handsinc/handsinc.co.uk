@@ -8,6 +8,7 @@
 #
 # Place this script into the _plugins directory of your Jekyll site.
 #
+require 'cgi'
 require 'uri'
 
 module Jekyll
@@ -111,6 +112,7 @@ module Jekyll
       classes = []
       classes << 'active' if selected
       external_link = value.start_with?('http://')
+      name = CGI::escapeHTML(name)
       # classes << 'external_menu_link' if external_link
       output = "#{indent}<a href=\"#{value}\" class=\"#{classes.join(' ')}\""
       output += ' target="_blank"' if external_link
