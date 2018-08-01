@@ -36,12 +36,14 @@ menu_order: 1
   <link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/blocksbox/css/filesharing/seperator.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/blocksbox/css/form/bold.css" />
 
+  {% comment %}
   <script type="text/javascript" src="../rw_common/themes/blocksbox/javascript.js">
   </script>
 
   <script type="text/javascript" charset="utf-8">
     var blankSrc = "../rw_common/themes/blocksbox/png/blank.gif";
   </script>
+  {% endcomment %}
   <style type="text/css">
     img {
       behavior: url("../rw_common/themes/blocksbox/png/pngbehavior.htc");
@@ -59,8 +61,9 @@ menu_order: 1
 
     <div id="content">
 
+      {% comment %}
       <script src="../rw_common/plugins/Blocks/fixbox.js" type='text/javascript'></script>
-
+      {% endcomment %}
 
       <div id='blocksWrapper' style='position:relative; margin:0px; margin-left:auto; margin-right:auto; border:0px; padding:0px; width:98%; overflow:hidden;'>
         <div id='blocksPage' style=' position:relative; border:0px; padding:0px; margin:0px; margin-left:auto; margin-right:auto; top:0px; left:0px; width:795px; height:850px; overflow:hidden; '>
@@ -162,17 +165,21 @@ menu_order: 1
             </div>
           </div>
 
+          {% comment %}
           <script type='text/javascript'>
             blocks_growparent('blocksPage');
           </script>
+          {% endcomment %}
 
         </div>
       </div>
 
+      {% comment %}
       <script type='text/javascript'>
         var fixable = new Array('id3', 'id4', '');
         blocks_fixbox(fixable);
       </script>
+      {% endcomment %}
     </div>
 
     <div id="footer">
