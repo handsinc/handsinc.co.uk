@@ -30,11 +30,10 @@ menus:
       - Testimonials: /aboutus/#testimonials
     - Services:
       - /services/
-      - Services for Individuals: /services/services-for-individuals/
+      - Complementing Your Health: /services/
       - Complementary Therapies:
         - /services/complementary-therapies/
         - Range of Therapies: /services/complementary-therapies/#therapies
-        - Low Cost Clinics: /services/complementary-therapies/low-cost-clinics/
       - Reclaim the Menopause: http://www.reclaimthemenopause.com/
       - Healthy Lifestyle Activities: /services/healthy-lifestyle-activities/
       - Move & Release: /services/move-and-release/
@@ -82,7 +81,6 @@ menus:
         - Turkish: /healthwise-directory/employment/turkish/
         - Vietnamese: /healthwise-directory/employment/vietnamese/
     - Get Involved: /get-involved/
-    - Gallery: /gallery/
     - Contact Us: /contact-us/
 
 exclude:
