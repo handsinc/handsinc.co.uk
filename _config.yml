@@ -30,7 +30,7 @@ menus:
       - Testimonials: /aboutus/#testimonials
     - Services:
       - /services/
-      - Complementing Your Health: /services/
+      - Complementing Your Health: /services/complementing-your-health/
       - Complementary Therapies:
         - /services/complementary-therapies/
         - Range of Therapies: /services/complementary-therapies/#therapies
