@@ -34,7 +34,9 @@ menus:
       - Complementary Therapies:
         - /services/complementary-therapies/
         - Range of Therapies: /services/complementary-therapies/#therapies
-      - Reclaim the Menopause: http://www.reclaimthemenopause.com/
+      - Menopause Project:
+        - /services/menopause-project/
+        - Support Group: /services/menopause-project/support-group/
       - Healthy Lifestyle Activities: /services/healthy-lifestyle-activities/
       - Move & Release: /services/move-and-release/
       - Stress Awareness: /services/stress-awareness/
