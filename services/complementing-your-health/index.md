@@ -17,7 +17,7 @@ If you have any mobility issues we may be able to offer transport to help you ge
 
 ### Pass It On
 
-Would you like tthe opportunity to gain new skills and support others? 
+Would you like the opportunity to gain new skills and support others? 
 As part of our programme we are offering Hackney residents who are 50plus the opportunity to  learn a basic chair based yoga exercise routine that they can then take out into the community and teach others. We will offer free monthly training sessions to support you, no previous skills needed.
 
 Venue: [Pembury Community Centre, 1 Atkins Square, Dalston Lane, Hackney E8 1HL](https://goo.gl/maps/9An7mX4WeNL2)
